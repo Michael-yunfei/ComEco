@@ -1,4 +1,3 @@
-# Computational Economic
 # Lecture 0 - Introduction to Python
 # Konstanz, 12/03/2019
 # @ Michael(Fei) Wang

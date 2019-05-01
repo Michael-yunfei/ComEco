@@ -1,4 +1,4 @@
-# Companion Python Code for Machine Learning Course
+# Lecture 3 - Pandas
 # @ Michael
 
 # pandas library

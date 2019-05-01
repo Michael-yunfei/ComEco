@@ -1,4 +1,4 @@
-# Companion Python Code for Machine Learning Course
+# Lecture 1 - Data structure
 # @ Michael
 
 # mutable and immutable object

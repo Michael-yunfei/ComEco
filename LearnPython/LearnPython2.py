@@ -1,4 +1,4 @@
-# Companion Python Code for Machine Learning Course
+# Lecture 2 - Numpy
 # @ Michael
 
 # numpy library

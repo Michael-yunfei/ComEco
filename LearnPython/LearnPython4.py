@@ -1,4 +1,4 @@
-# Companion Python Code for Machine Learning Course
+# Lecture 4 - DataFrame
 # @ Michael
 
 # Data import and transformation
