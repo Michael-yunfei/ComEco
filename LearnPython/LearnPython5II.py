@@ -14,10 +14,8 @@
 # by explicitly mapping data to the visual objects that make up the plot.
 # for plotnine, you need install: https://github.com/has2k1/plotnine
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import math
 import os  # the function for chaning working directory path
 import seaborn as sns
 
