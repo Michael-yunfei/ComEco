@@ -145,6 +145,6 @@ ax.scatter(mpg['displ'], mpg['hwy'])
 
 # I hope now you shoule realize that matplotlib is very old fashion
 # code is barely readable
-# that's why we will stick to seaborn and plotnine for next lecture
+# that's why we will stick to seaborn for next lecture
 
 # End of code
