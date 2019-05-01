@@ -1,7 +1,7 @@
 # Computational Economic
-# Lecture 1 - Introduction to Python
+# Lecture 0 - Introduction to Python
 # Konstanz, 12/03/2019
-# @ Michael(Fei) Wong
+# @ Michael(Fei) Wang
 
 # Please read Chapter 1 and 2 by Guttag(2017)
 # Simple Numerical Programs to review Python
@@ -47,4 +47,4 @@ else:
     print(x, 'is not 1.0')
 
 
-# Functions, Scoping, and Abstration
+# End of code
