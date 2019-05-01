@@ -2,7 +2,6 @@
 # Konstanz, 12/03/2019
 # @ Michael(Fei) Wang
 
-# Please read Chapter 1 and 2 by Guttag(2017)
 # Simple Numerical Programs to review Python
 
 # For Loop
