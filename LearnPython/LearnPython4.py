@@ -1,7 +1,7 @@
 # Lecture 4 - DataFrame
 # @ Michael
 
-# Data import and transformation
+# Data import and transformation (pandas more)
 # https://pandas.pydata.org/pandas-docs/stable/getting_started/comparison/comparison_with_r.html
 
 import numpy as np
