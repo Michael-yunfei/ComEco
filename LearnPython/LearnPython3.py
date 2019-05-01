@@ -1,7 +1,7 @@
 # Lecture 3 - Pandas
 # @ Michael
 
-# pandas library
+# pandas library (DataFrame)
 # pandas is quilivalent to dataframe format in R
 # pandas is built upon the Numpy package, which gives the certain advantage for
 # doing scientific programming
