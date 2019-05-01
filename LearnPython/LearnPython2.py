@@ -1,7 +1,7 @@
 # Lecture 2 - Numpy
 # @ Michael
 
-# numpy library
+# numpy library (scientific programming)
 # numpy library is built up on the list or you can see that it is constructed
 # based on the list
 # tips: one dimension, no need use [], for instance np.arange(1, 10)
