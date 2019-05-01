@@ -1,7 +1,7 @@
 # Lecture 1 - Data structure
 # @ Michael
 
-# mutable and immutable object
+# mutable and immutable object (very important!)
 # list, set, dict are mutable objects
 # all others are immutable objects
 
