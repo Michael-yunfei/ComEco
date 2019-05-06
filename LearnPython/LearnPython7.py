@@ -1,4 +1,4 @@
-# Lecture 6 - Classes and Objected-Oriented Programming
+# Lecture 7 - Classes and Objected-Oriented Programming (1)
 # @ Michael
 
 # This one is the most important lecture until this stage
