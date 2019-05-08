@@ -6,5 +6,5 @@ This repo is built for my developing course - applied computational economics. R
 Here is the content of this repo:
 
 * Learning Python: from beginner to expert
+* Computation Basic: numerical methods and scientific programming
 * Applied Computational Economics and Finance
-* Machine and Statistical Learning
