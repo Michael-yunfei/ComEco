@@ -1,6 +1,8 @@
 # Function for calculating the minimum distance of codes based on
 # Hamming distance
 # @ Michael (UCD, ID: 17210880)
+# https://ybazlov.github.io/code/pdf/32032_ch5_draft.pdf
+# http://www.math.ualberta.ca/~hongchen/math422
 
 # important the main package
 import numpy as np
@@ -229,9 +231,99 @@ for i in range(3):
         q6count += 1
 
 
-q6kspace
+
+#### council for calculatation
 
 
-q6kspace @ q6g1
+ex3g1 = np.array([[1, 0, 0, 0, 1, 2], [0, 1, 0, 3, 0, 4],
+                  [0, 0, 1, 1, 2, 2]])
 
-q6kspace @ q6g2
+ex3m = np.array([[0, 0, 0, 0, 3, 0], [0, 0, 0, 1, 0, 0], [0, 0, 2, 0 ,0 ,0],
+                 [0 ,0 ,0 ,0, 0, 1], [1, 0, 0, 0, 0 ,0 ], [0,1,0,0,0,0]])
+
+ex3h = np.array([[0 ,2 ,4 ,1, 0, 0], [4, 0, 3, 0, 1, 0], [3, 1 ,3 ,0, 0, 1]])
+
+
+ex3h @ ex3g1.transpose()
+
+
+#### Exercise 4
+
+ex4g1 = np.array([[1, 0, 0, 0, 1, 1], [0, 1, 0, 2, 0, 2],[0, 0, 1, 1, 2, 0]])
+
+ex4h1 = np.array([[1, 0, 2, 0, 2, 0], [0, 1, 2, 0, 2, 1], [0, 0, 0, 1, 1, 2]])
+
+ex4g1 @ ex4h1.transpose()
+
+ex4unv = np.identity(6)
+
+ex4unv[0, :]
+
+ex4u2v = ex4unv * 2
+
+for i in range(6):
+    print(ex4h1 @ ex4unv[i, :])
+
+for i in range(6):
+    print(ex4h1 @ ex4u2v[i, :])
+
+
+ex4h1 @ [2, 1, 1, 2, 2, 1]
+
+ex4h1 @ [2, 1, 2, 2, 1, 1] @ np.linalg.inv(ex4h1)
+
+ex4h3 = np.array([[1, 1, 1, 0, 0, 0, 1], [0, 1, 0, 1, 0, 1, 1],
+                  [1, 1, 0, 0, 1, 1, 0]])
+
+ex43unt = np.identity(7)
+
+for i in range(7):
+    print(ex4h3 @ ex43unt[i, :])
+
+
+ex4h3 @ [0, 1, 1, 1, 1, 1, 1]
+
+arr = np.arange(2)
+
+np.random.permutation([[1, 0, 0, 0], [1, 1, 0, 0],[1, 1, 1, 0]]).transpose()
+
+
+ex4hfina = np.array([[1, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 1],
+                     [0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1],
+                     [0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1],
+                     [0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1]])
+
+ex4hfina @ [1,1,1,1,1,1,1,0,0,0,0,0,0,0,0]
+
+
+
+# Exercise 5
+#
+# 1 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 1 , 1 , 1 , 1\\
+# 			0 , 1 , 0 , 0 , 0 , 0 , 1 , 0 , 1 , 2 , 2 , 1 \\
+# 			0 , 0 , 1 , 0 , 0 , 0 , 1 , 1 , 0 , 1 , 2 , 2 \\
+# 			0 , 0 , 0 , 1 , 0 , 0 , 1 , 2 , 1 , 0 , 1 , 2 \\
+# 			0 , 0 , 0 , 0 , 1 , 0 , 1 , 2 , 2 , 1 , 0 , 1 \\
+# 			0 , 0 , 0 , 0 , 0 , 1 , 1 , 1 , 2 , 2 , 1 , 0
+
+ex5g1 = np.array([[ 1 , 0 , 0 , 0 , 0 , 0 , 0 , 1 , 1 , 1 , 1 , 1],
+                  [0 , 1 , 0 , 0 , 0 , 0 , 1 , 0 , 1 , 2 , 2 , 1 ],
+                  [0 , 0 , 1 , 0 , 0 , 0 , 1 , 1 , 0 , 1 , 2 , 2],
+                  [0 , 0 , 0 , 1 , 0 , 0 , 1 , 2 , 1 , 0 , 1 , 2],
+                  [0 , 0 , 0 , 0 , 1 , 0 , 1 , 2 , 2 , 1 , 0 , 1],
+                  [0 , 0 , 0 , 0 , 0 , 1 , 1 , 1 , 2 , 2 , 1 , 0]])
+
+ex5g1 @ np.transpose(ex5g1)
+
+
+# Exercise 7
+
+ex7g1 = np.array([[1, 0, 0, 0, 0, 1],
+                 [0, 1, 0, 0, 1, 1],
+                 [0, 0, 1, 0, 1,0],
+                 [0, 0, 0, 1, 1, 1]])
+
+ex7h1 = np.array([[0, 1, 1, 1, 1, 0],
+                  [1, 1, 0, 1, 0, 1]])
+
+ex7g1 @ np.transpose(ex7h1)
